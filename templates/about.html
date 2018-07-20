@@ -1,0 +1,91 @@
+
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+html{margin:0px;background-color:gray;}
+section {line-height: 2;}
+
+a:hover{color:#31D9D9;}
+a{text-decoration: none; color:#5F5F5F;padding-right:20px;}
+
+h1 {text-align:center; margin-bottom:0px;text-shadow:gray 0px 10px 20px;font-family:Times;margin-top:200px;}
+
+.owo {text-align: right; padding-right:20px;}
+.apple{text-align:right;font-size:10px; background-color: darkgray}
+
+.col{padding-left:50px;padding-right:50px;  }
+.top{background-color:darkgray; padding-top:0px;}
+body {background-color:lightgray;}  
+
+h2 {margin-left:200px;}
+
+li,ul{list-style-type:none;}
+
+img {width:66%;margin:60px;border-bottom-left-radius: 50%;border-top-right-radius: 50%;border-top-left-radius: 10%;border-bottom-right-radius: 10%;border:solid gray 5px;padding:10pX;} 
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="cotainer-fluid">
+      <div class="row top">
+        <div class="col">
+          <img src="../static/images/233.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+        <!-- Top-level heading -->
+          <h1><strong>  Jake Li</strong></h1>
+        </div>
+      </div>
+
+      <!-- About section -->
+      <section class="row" id="about">
+        <div class="col">
+          <h2>About</h2>
+        </div>
+        <div class="col">
+          <p>so, that's about me, a rising senior high schoo students From China, and I'm going to apply universities in US.</p>
+        </div>
+      </section>
+
+      <!-- Resume section -->
+      <section class="row" id="resume">
+        <div class="col">
+          <h2>Resume</h2>
+        </div>
+        <div class="col">
+          <ul>
+            <!-- List your educational background -->
+            <li>
+              Education
+              <ul>
+                <li>Chengdu Foreign Languages School     <div class="owo">Grade 7-9</div></li>
+                <li>Chengdu Foreign Languages School AP Center  <div class="owo">Grade 10-12</div></li>
+              </ul>
+            </li>
+            <!-- List your programming skills -->
+            <li>
+              Programming skills
+              <ul>
+                <li>basic html and css</li>
+                <li>basic Java</li>
+              </ul>
+            </li>
+            <!-- List other skills you have -->
+            <li>
+              Other skills
+              <ul>
+                <li>3Dsmax modeling</li>
+                <li>Keyshot rendering</li>
+                <li>RC plane</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer navigation links -->
+   
+
+
+{% endblock %}
